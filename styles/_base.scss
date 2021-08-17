@@ -1,0 +1,22 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    font-size: 1.2rem;
+    background: cadetblue;
+    font-family: $font-stack;
+}
