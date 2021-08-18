@@ -44,8 +44,8 @@ img {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 68% 32%;
-      grid-template-rows: 68% 32%;
+  -ms-grid-rows: 67% 33%;
+      grid-template-rows: 67% 33%;
 }
 
 .top {
