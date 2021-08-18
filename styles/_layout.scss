@@ -16,7 +16,7 @@
         position: relative;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        display: flex;
+        // display: flex;
 
         .nav {
             grid-column: 1 / 2;
@@ -25,9 +25,10 @@
             z-index: 999;
             // padding: 4em 5.5em;
             width: 100%;
-            max-width: 55rem;
+            max-width: 53rem;
             margin-top: 5rem;
             display: flex;
+            align-items: center;
             justify-content: center;
             // outline: solid 2px red;
 
@@ -38,7 +39,7 @@
 
             .nav__ul {
                 display: flex;
-                margin-left: 7rem;
+                margin-left: 5rem;
 
                 .nav__li + .nav__li {
                     margin-left: 4rem;
@@ -46,8 +47,8 @@
             }
         }
 
-        img {
-            // position: absolute;
+        .hero-img {
+            position: absolute;
             // object-position: bottom;
         }
     }
@@ -59,7 +60,7 @@
 
         .slide-arrows--wrap {
             background: black;
-            padding: 2em 0em;
+            padding: 1.5em 0em;
             // height: 5rem;
             width: 25%;
             position: absolute;
@@ -70,6 +71,7 @@
 
             img {
                 width: 2rem;
+                cursor: pointer;
             }
         }
 
