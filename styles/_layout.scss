@@ -2,12 +2,12 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 65% 35%;
+    grid-template-rows: 68% 32%;
 }
 
 .top {
     display: grid;
-    grid-template-columns: 58% 42%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
 
     .top__img--wrap {
@@ -22,9 +22,31 @@
 
     .hero-info {
         @include flexCenter();
+        padding: 4rem;
+        position: relative;
+
+        .slide-arrows--wrap {
+            background: black;
+            padding: 1.5em;
+            // height: 5rem;
+            width: 25%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 2rem;
+            }
+        }
 
         .wrap {
-            max-width: 45ch;
+            max-width: 42ch;
+
+            .hero-info__h1 {
+                font-size: 3.8rem;
+            }
         }
     }
 }
@@ -35,9 +57,15 @@
 
     .about-info {
         @include flexCenter();
+        padding: 4rem;
 
         .wrap {
             max-width: 52ch;
+
+            .about-info__h2 {
+                font-size: 1.8rem;
+                letter-spacing: 0.5rem;
+            }
         }
     }
 }

@@ -16,13 +16,16 @@ html {
 
 body {
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background: white;
     font-family: $font-stack;
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.8;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: color(dark-gray);
 }
 
 img {
