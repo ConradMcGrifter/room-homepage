@@ -15,8 +15,18 @@ html {
 }
 
 body {
-    min-height: 100%;
+    height: 100%;
     font-size: 1.2rem;
-    background: cadetblue;
+    background: white;
     font-family: $font-stack;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }

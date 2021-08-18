@@ -18,9 +18,96 @@ html {
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
   font-size: 1.2rem;
-  background: cadetblue;
+  background: white;
   font-family: "Spartan", Arial, sans-serif;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.grid--container {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 65% 35%;
+      grid-template-rows: 65% 35%;
+}
+
+.top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 58% 42%;
+      grid-template-columns: 58% 42%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+.top .top__img--wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.top .top__img--wrap img {
+  position: absolute;
+}
+
+.top .hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.top .hero-info .wrap {
+  max-width: 45ch;
+}
+
+.bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 40% 30%;
+      grid-template-columns: 30% 40% 30%;
+}
+
+.bottom .about-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bottom .about-info .wrap {
+  max-width: 52ch;
 }
 /*# sourceMappingURL=main.css.map */

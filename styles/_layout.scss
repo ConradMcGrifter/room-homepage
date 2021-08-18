@@ -1,0 +1,43 @@
+.grid--container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65% 35%;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 100%;
+
+    .top__img--wrap {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+    }
+
+    .hero-info {
+        @include flexCenter();
+
+        .wrap {
+            max-width: 45ch;
+        }
+    }
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
+    .about-info {
+        @include flexCenter();
+
+        .wrap {
+            max-width: 52ch;
+        }
+    }
+}
