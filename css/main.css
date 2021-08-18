@@ -159,7 +159,7 @@ li {
 }
 
 .top .hero-info .wrap {
-  max-width: 42ch;
+  max-width: 43ch;
 }
 
 .top .hero-info .wrap .hero-info__h1 {
@@ -188,11 +188,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 4rem;
-}
-
-.bottom .about-info .wrap {
-  max-width: 52ch;
+  padding: 3rem;
 }
 
 .bottom .about-info .wrap .about-info__h2 {

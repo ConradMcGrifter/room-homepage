@@ -76,7 +76,7 @@
         }
 
         .wrap {
-            max-width: 42ch;
+            max-width: 43ch;
 
             .hero-info__h1 {
                 font-size: 3.4rem;
@@ -92,10 +92,10 @@
 
     .about-info {
         @include flexCenter();
-        padding: 4rem;
+        padding: 3rem;
 
         .wrap {
-            max-width: 52ch;
+            // max-width: 55ch;
 
             .about-info__h2 {
                 font-size: 1.4rem;
