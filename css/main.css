@@ -19,7 +19,7 @@ html {
 
 body {
   height: 100%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background: white;
   font-family: "Spartan", Arial, sans-serif;
 }
@@ -38,14 +38,24 @@ img {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
 .grid--container {
   height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 67% 33%;
-      grid-template-rows: 67% 33%;
+  -ms-grid-rows: 66% 34%;
+      grid-template-rows: 66% 34%;
 }
 
 .top {
@@ -61,10 +71,50 @@ img {
   height: 100%;
   width: 100%;
   position: relative;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.top .top__img--wrap img {
+.top .top__img--wrap .nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
   position: absolute;
+  z-index: 999;
+  width: 100%;
+  max-width: 55rem;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .top__img--wrap .nav .nav__logo {
+  width: 75px;
+}
+
+.top .top__img--wrap .nav .nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 7rem;
+}
+
+.top .top__img--wrap .nav .nav__ul .nav__li + .nav__li {
+  margin-left: 4rem;
 }
 
 .top .hero-info {
@@ -87,7 +137,7 @@ img {
 
 .top .hero-info .slide-arrows--wrap {
   background: black;
-  padding: 1.5em;
+  padding: 2em 0em;
   width: 25%;
   position: absolute;
   bottom: 0;
@@ -108,7 +158,8 @@ img {
 }
 
 .top .hero-info .wrap .hero-info__h1 {
-  font-size: 3.8rem;
+  font-size: 3.4rem;
+  font-weight: 600;
 }
 
 .bottom {
@@ -140,7 +191,7 @@ img {
 }
 
 .bottom .about-info .wrap .about-info__h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   letter-spacing: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */

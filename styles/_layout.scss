@@ -2,7 +2,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 67% 33%;
+    grid-template-rows: 66% 34%;
 }
 
 .top {
@@ -14,9 +14,41 @@
         height: 100%;
         width: 100%;
         position: relative;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+
+        .nav {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            position: absolute;
+            z-index: 999;
+            // padding: 4em 5.5em;
+            width: 100%;
+            max-width: 55rem;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            // outline: solid 2px red;
+
+            .nav__logo {
+                width: 75px;
+                // height: 14px;
+            }
+
+            .nav__ul {
+                display: flex;
+                margin-left: 7rem;
+
+                .nav__li + .nav__li {
+                    margin-left: 4rem;
+                }
+            }
+        }
 
         img {
-            position: absolute;
+            // position: absolute;
+            // object-position: bottom;
         }
     }
 
@@ -27,7 +59,7 @@
 
         .slide-arrows--wrap {
             background: black;
-            padding: 1.5em;
+            padding: 2em 0em;
             // height: 5rem;
             width: 25%;
             position: absolute;
@@ -45,7 +77,8 @@
             max-width: 42ch;
 
             .hero-info__h1 {
-                font-size: 3.8rem;
+                font-size: 3.4rem;
+                font-weight: 600;
             }
         }
     }
@@ -63,7 +96,7 @@
             max-width: 52ch;
 
             .about-info__h2 {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
                 letter-spacing: 0.5rem;
             }
         }
