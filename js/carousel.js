@@ -1,7 +1,7 @@
 const SLIDES = Array.from(document.querySelectorAll(".img--wrap"));
 const INFO = Array.from(document.querySelectorAll(".info--wrap"));
-const PREVIOUS = document.querySelector(".previous");
-const NEXT = document.querySelector(".next");
+const PREVIOUS = document.querySelector(".previous--wrap");
+const NEXT = document.querySelector(".next--wrap");
 
 let slideIndex = 1;
 
