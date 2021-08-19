@@ -127,14 +127,18 @@ li {
   height: 100%;
   position: absolute;
   visibility: hidden;
-  -webkit-transition: left 0.25s ease-in-out;
-  transition: left 0.25s ease-in-out;
+  -webkit-transition: left 0.25s ease-in-out, opacity 0.5s ease-in-out;
+  transition: left 0.25s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0.25;
   left: -100%;
+  z-index: 1;
 }
 
 .top .top__hero--wrap .img--container .img--wrap.display {
   left: 0;
+  opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 .top .hero-info {
@@ -210,5 +214,27 @@ li {
 .bottom .about-info .wrap .about-info__h2 {
   font-size: 1.4rem;
   letter-spacing: 0.5rem;
+}
+
+@-webkit-keyframes slide {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 0.5;
+  }
+}
+
+@keyframes slide {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 0.5;
+  }
 }
 /*# sourceMappingURL=main.css.map */

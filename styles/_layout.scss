@@ -56,13 +56,23 @@
                 height: 100%;
                 position: absolute;
                 visibility: hidden;
-                transition: left 0.25s ease-in-out;
+                transition: left 0.25s ease-in-out, opacity 0.5s ease-in-out;
+                opacity: 0.25;
                 left: -100%;
+                z-index: 1;
 
                 &.display {
                     left: 0;
+                    opacity: 1;
                     visibility: visible;
+                    z-index: 2;
+                    // animation: slide 0.25s ease-in-out;
                 }
+
+                // &.freeze {
+                //     left: 0;
+                //     visibility: visible;
+                // }
 
                 .hero-images {
                     // position: absolute;
@@ -121,5 +131,16 @@
                 letter-spacing: 0.5rem;
             }
         }
+    }
+}
+
+@keyframes slide {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 0.5;
     }
 }
