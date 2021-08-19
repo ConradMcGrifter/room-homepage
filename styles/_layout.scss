@@ -16,7 +16,7 @@
 
     @include mobileSize {
         grid-template-columns: 1fr;
-        grid-template-rows: 40rem 45rem;
+        grid-template-rows: 35rem 40rem;
     }
 
     .top__hero--wrap {
@@ -50,12 +50,14 @@
             @include mobileSize {
                 justify-content: flex-start;
                 padding: 0 2em;
+                max-width: unset;
             }
 
             .hamburger-btn {
                 background: none;
                 border: none;
                 display: none;
+                cursor: pointer;
 
                 @include mobileSize {
                     display: block;
@@ -109,7 +111,7 @@
                     margin-left: 4rem;
 
                     @include mobileSize {
-                        margin-left: 2rem;
+                        margin-left: 2.5rem;
                     }
                 }
 
@@ -196,8 +198,8 @@
             .shop__link {
                 color: black;
                 letter-spacing: 1rem;
-                font-weight: 700;
-                font-size: 1.5rem;
+                font-weight: 600;
+                font-size: 1.4rem;
                 transition: color 0.25s;
 
                 &:hover {
@@ -239,7 +241,7 @@
             .previous--wrap,
             .next--wrap {
                 background: black;
-                padding: 1.25em 0;
+                padding: 1.5em 0;
                 width: 100%;
                 cursor: pointer;
                 @include flexCenter();
@@ -250,8 +252,11 @@
                 }
 
                 img {
-                    width: 2rem;
-                    // cursor: pointer;
+                    width: 1.25rem;
+                }
+
+                @include mobileSize {
+                    padding: 1em;
                 }
             }
         }
@@ -338,5 +343,24 @@
     to {
         right: 0;
         opacity: 0.5;
+    }
+}
+
+.darken {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: opacity 0.25s;
+
+    &.display {
+        z-index: 998;
+        visibility: visible;
+        opacity: 0.6;
     }
 }
