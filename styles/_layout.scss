@@ -16,7 +16,7 @@
 
     @include mobileSize {
         grid-template-columns: 1fr;
-        grid-template-rows: 35rem 45rem;
+        grid-template-rows: 40rem 45rem;
     }
 
     .top__hero--wrap {
@@ -55,6 +55,10 @@
             .nav__ul {
                 display: flex;
                 margin-left: 5rem;
+
+                @include mobileSize {
+                    margin-left: 0;
+                }
 
                 .nav__li + .nav__li {
                     margin-left: 4rem;
@@ -132,6 +136,10 @@
             justify-content: flex-start;
             margin-top: 3rem;
 
+            @include mobileSize {
+                margin-top: 5rem;
+            }
+
             .shop__link {
                 color: black;
                 letter-spacing: 1rem;
@@ -199,8 +207,8 @@
             width: 100%;
             max-width: 43ch;
             position: relative;
-
             @include flexCenter();
+
             .info--wrap {
                 width: 100%;
                 position: absolute;
@@ -235,6 +243,7 @@
                     @include mobileSize {
                         visibility: unset;
                         @include flexCenter(column);
+                        align-items: unset;
                     }
                 }
             }
@@ -246,9 +255,14 @@
     display: grid;
     grid-template-columns: 30% 40% 30%;
 
+    @include mobileSize {
+        grid-template-columns: 1fr;
+        grid-template-rows: 22rem auto 22rem;
+    }
+
     .about-info {
         @include flexCenter();
-        padding: 3rem;
+        padding: 5rem 3rem;
 
         .wrap {
             // max-width: 55ch;
