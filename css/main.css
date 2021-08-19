@@ -67,7 +67,7 @@ li {
       grid-template-rows: 100%;
 }
 
-.top .top__img--wrap {
+.top .top__hero--wrap {
   height: 100%;
   width: 100%;
   position: relative;
@@ -79,7 +79,7 @@ li {
   grid-row: 1 / 2;
 }
 
-.top .top__img--wrap .nav {
+.top .top__hero--wrap .nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -102,23 +102,39 @@ li {
           justify-content: center;
 }
 
-.top .top__img--wrap .nav .nav__logo {
+.top .top__hero--wrap .nav .nav__logo {
   width: 75px;
 }
 
-.top .top__img--wrap .nav .nav__ul {
+.top .top__hero--wrap .nav .nav__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 5rem;
 }
 
-.top .top__img--wrap .nav .nav__ul .nav__li + .nav__li {
+.top .top__hero--wrap .nav .nav__ul .nav__li + .nav__li {
   margin-left: 4rem;
 }
 
-.top .top__img--wrap .hero-img {
+.top .top__hero--wrap .img--container {
+  height: 100%;
+  width: 100%;
+}
+
+.top .top__hero--wrap .img--container .img--wrap {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  visibility: hidden;
+  -webkit-transition: left 0.25s ease-in-out;
+  transition: left 0.25s ease-in-out;
+  left: -100%;
+}
+
+.top .top__hero--wrap .img--container .img--wrap.display {
+  left: 0;
+  visibility: visible;
 }
 
 .top .hero-info {
