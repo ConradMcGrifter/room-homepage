@@ -59,6 +59,30 @@
                 .nav__li + .nav__li {
                     margin-left: 4rem;
                 }
+
+                .nav__li {
+                    position: relative;
+                    .nav__a {
+                        font-size: 1.5rem;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            transform: scaleX(0);
+                            width: 100%;
+                            background: white;
+                            transition: transform 0.25s;
+                            height: 0.15rem;
+                            bottom: -0.5rem;
+                            left: 0;
+                        }
+
+                        &:hover::after {
+                            transform: scaleX(1);
+                        }
+                    }
+                }
             }
         }
 
