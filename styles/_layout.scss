@@ -3,12 +3,21 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 66% 34%;
+
+    @include mobileSize() {
+        grid-template-rows: auto auto;
+    }
 }
 
 .top {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
+
+    @include mobileSize {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30rem auto;
+    }
 
     .top__hero--wrap {
         background: black;
@@ -18,6 +27,11 @@
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         // display: flex;
+
+        @include mobileSize {
+            grid-column: unset;
+            grid-row: unset;
+        }
 
         .nav {
             grid-column: 1 / 2;
@@ -84,6 +98,10 @@
         position: relative;
         overflow: hidden;
 
+        @include mobileSize {
+            overflow: unset;
+        }
+
         .slide-arrows--wrap {
             background: black;
             padding: 1.5em 0em;
@@ -94,6 +112,17 @@
             left: 0;
             display: flex;
             justify-content: space-around;
+            z-index: 10;
+
+            @include mobileSize {
+                top: 0;
+                right: 0;
+                bottom: unset;
+                left: unset;
+                width: 10rem;
+
+                transform: translateY(-100%);
+            }
 
             img {
                 width: 2rem;
@@ -115,6 +144,12 @@
                 opacity: 0;
                 transition: right 0.25s ease-in-out, opacity 0.5s ease-in-out;
 
+                @include mobileSize {
+                    position: unset;
+                    visibility: unset;
+                    display: none;
+                }
+
                 .hero-info__h1 {
                     font-size: 3.4rem;
                     font-weight: 600;
@@ -125,6 +160,11 @@
                     visibility: visible;
                     opacity: 1;
                     // animation: slide 0.25s ease-in-out;
+
+                    @include mobileSize {
+                        visibility: unset;
+                        @include flexCenter(column);
+                    }
                 }
             }
         }
