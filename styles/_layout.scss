@@ -93,7 +93,7 @@
     }
 
     .hero-info {
-        @include flexCenter();
+        @include flexCenter(column);
         padding: 4rem;
         position: relative;
         overflow: hidden;
@@ -101,6 +101,34 @@
         @include mobileSize {
             overflow: unset;
             padding: 2rem;
+        }
+
+        .shop-now--wrap {
+            @include flexCenter(0);
+            justify-content: flex-start;
+            margin-top: 3rem;
+
+            .shop__link {
+                color: black;
+                letter-spacing: 1rem;
+                font-weight: 700;
+                font-size: 1.5rem;
+                transition: color 0.25s;
+
+                &:hover {
+                    color: color(dark-gray);
+                }
+
+                &:hover + .shop__arrow {
+                    opacity: 0.5;
+                }
+            }
+            .shop__arrow {
+                width: 4rem;
+                margin-left: 2rem;
+                opacity: 1;
+                transition: opacity 0.25s;
+            }
         }
 
         .slide-arrows--wrap {
@@ -166,6 +194,12 @@
                 .hero-info__h1 {
                     font-size: clamp(2.8rem, 3vw, 3.4rem);
                     font-weight: 600;
+                    max-width: 15ch;
+                }
+
+                // this limits the width of the second slide header element to match the design
+                .width-limit {
+                    max-width: 13ch;
                 }
 
                 &.display {

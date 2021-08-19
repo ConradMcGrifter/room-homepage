@@ -175,10 +175,10 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 4rem;
   position: relative;
   overflow: hidden;
@@ -189,6 +189,51 @@ li {
     overflow: unset;
     padding: 2rem;
   }
+}
+
+.top .hero-info .shop-now--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 0;
+          flex-direction: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 3rem;
+}
+
+.top .hero-info .shop-now--wrap .shop__link {
+  color: black;
+  letter-spacing: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.top .hero-info .shop-now--wrap .shop__link:hover {
+  color: #a1a1a1;
+}
+
+.top .hero-info .shop-now--wrap .shop__link:hover + .shop__arrow {
+  opacity: 0.5;
+}
+
+.top .hero-info .shop-now--wrap .shop__arrow {
+  width: 4rem;
+  margin-left: 2rem;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
 }
 
 .top .hero-info .slide-arrows--wrap {
@@ -289,6 +334,11 @@ li {
 .top .hero-info .hero-info__container .info--wrap .hero-info__h1 {
   font-size: clamp(2.8rem, 3vw, 3.4rem);
   font-weight: 600;
+  max-width: 15ch;
+}
+
+.top .hero-info .hero-info__container .info--wrap .width-limit {
+  max-width: 13ch;
 }
 
 .top .hero-info .hero-info__container .info--wrap.display {
