@@ -176,7 +176,7 @@
 
             @include mobileSize {
                 top: 0;
-                right: 0;
+                right: 0rem;
                 bottom: unset;
                 left: unset;
                 width: 10rem;
@@ -186,7 +186,7 @@
             .previous--wrap,
             .next--wrap {
                 background: black;
-                padding: 1.5em;
+                padding: 1.25em 0;
                 width: 100%;
                 cursor: pointer;
                 @include flexCenter();
@@ -208,6 +208,7 @@
             max-width: 43ch;
             position: relative;
             @include flexCenter();
+            // overflow: hidden;
 
             .info--wrap {
                 width: 100%;
@@ -221,6 +222,7 @@
                     // position: unset;
                     // visibility: unset;
                     // display: none;
+                    right: 0;
                 }
 
                 .hero-info__h1 {

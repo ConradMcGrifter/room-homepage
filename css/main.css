@@ -294,7 +294,7 @@ li {
 @media only screen and (max-width: 950px) {
   .top .hero-info .slide-arrows--wrap {
     top: 0;
-    right: 0;
+    right: 0rem;
     bottom: unset;
     left: unset;
     width: 10rem;
@@ -306,7 +306,7 @@ li {
 .top .hero-info .slide-arrows--wrap .previous--wrap,
 .top .hero-info .slide-arrows--wrap .next--wrap {
   background: black;
-  padding: 1.5em;
+  padding: 1.25em 0;
   width: 100%;
   cursor: pointer;
   display: -webkit-box;
@@ -363,6 +363,12 @@ li {
   opacity: 0;
   -webkit-transition: right 0.25s ease-in-out, opacity 0.5s ease-in-out;
   transition: right 0.25s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 950px) {
+  .top .hero-info .hero-info__container .info--wrap {
+    right: 0;
+  }
 }
 
 .top .hero-info .hero-info__container .info--wrap .hero-info__h1 {
