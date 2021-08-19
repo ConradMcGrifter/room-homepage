@@ -16,7 +16,7 @@
 
     @include mobileSize {
         grid-template-columns: 1fr;
-        grid-template-rows: 30rem auto;
+        grid-template-rows: 35rem 45rem;
     }
 
     .top__hero--wrap {
@@ -100,6 +100,7 @@
 
         @include mobileSize {
             overflow: unset;
+            padding: 2rem;
         }
 
         .slide-arrows--wrap {
@@ -151,7 +152,7 @@
                 }
 
                 .hero-info__h1 {
-                    font-size: 3.4rem;
+                    font-size: clamp(2.8rem, 3vw, 3.4rem);
                     font-weight: 600;
                 }
 
