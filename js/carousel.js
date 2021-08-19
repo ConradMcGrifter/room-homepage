@@ -1,4 +1,5 @@
 const SLIDES = Array.from(document.querySelectorAll(".img--wrap"));
+const INFO = Array.from(document.querySelectorAll(".info--wrap"));
 const PREVIOUS = document.querySelector(".previous");
 const NEXT = document.querySelector(".next");
 
@@ -17,7 +18,12 @@ const showSlide = (n) => {
         slide.classList.remove("display");
     });
 
+    INFO.forEach((info) => {
+        info.classList.remove("display");
+    });
+
     SLIDES[slideIndex - 1].classList.add("display");
+    INFO[slideIndex - 1].classList.add("display");
 };
 
 const changeSlide = (n) => {
