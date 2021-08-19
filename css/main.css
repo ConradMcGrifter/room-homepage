@@ -126,8 +126,48 @@ li {
           justify-content: center;
 }
 
+@media only screen and (max-width: 950px) {
+  .top .top__hero--wrap .nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 2em;
+  }
+}
+
+.top .top__hero--wrap .nav .hamburger-btn {
+  background: none;
+  border: none;
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .top .top__hero--wrap .nav .hamburger-btn {
+    display: block;
+    z-index: 999;
+  }
+}
+
+.top .top__hero--wrap .nav .hamburger-btn .hamburger.display {
+  display: none;
+}
+
+.top .top__hero--wrap .nav .hamburger-btn .x {
+  display: none;
+}
+
+.top .top__hero--wrap .nav .hamburger-btn .x.display {
+  display: block;
+}
+
 .top .top__hero--wrap .nav .nav__logo {
   width: 75px;
+}
+
+@media only screen and (max-width: 950px) {
+  .top .top__hero--wrap .nav .nav__logo {
+    margin: 0 auto;
+  }
 }
 
 .top .top__hero--wrap .nav .nav__ul {
@@ -140,11 +180,31 @@ li {
 @media only screen and (max-width: 950px) {
   .top .top__hero--wrap .nav .nav__ul {
     margin-left: 0;
+    display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    padding: 4em 2em 4em 4em;
+    right: 0;
+  }
+  .top .top__hero--wrap .nav .nav__ul.display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
 .top .top__hero--wrap .nav .nav__ul .nav__li + .nav__li {
   margin-left: 4rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .top .top__hero--wrap .nav .nav__ul .nav__li + .nav__li {
+    margin-left: 2rem;
+  }
 }
 
 .top .top__hero--wrap .nav .nav__ul .nav__li {
@@ -154,6 +214,12 @@ li {
 .top .top__hero--wrap .nav .nav__ul .nav__li .nav__a {
   font-size: 1.5rem;
   position: relative;
+}
+
+@media only screen and (max-width: 950px) {
+  .top .top__hero--wrap .nav .nav__ul .nav__li .nav__a {
+    color: black;
+  }
 }
 
 .top .top__hero--wrap .nav .nav__ul .nav__li .nav__a::after {

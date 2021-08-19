@@ -47,9 +47,43 @@
             justify-content: center;
             // outline: solid 2px red;
 
+            @include mobileSize {
+                justify-content: flex-start;
+                padding: 0 2em;
+            }
+
+            .hamburger-btn {
+                background: none;
+                border: none;
+                display: none;
+
+                @include mobileSize {
+                    display: block;
+                    z-index: 999;
+                }
+
+                .hamburger {
+                    &.display {
+                        display: none;
+                    }
+                }
+
+                .x {
+                    display: none;
+
+                    &.display {
+                        display: block;
+                    }
+                }
+            }
+
             .nav__logo {
                 width: 75px;
                 // height: 14px;
+
+                @include mobileSize {
+                    margin: 0 auto;
+                }
             }
 
             .nav__ul {
@@ -58,10 +92,25 @@
 
                 @include mobileSize {
                     margin-left: 0;
+                    display: none;
+                    position: absolute;
+                    background: white;
+                    width: 100%;
+                    padding: 4em 2em 4em 4em;
+                    right: 0;
+
+                    &.display {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
                 }
 
                 .nav__li + .nav__li {
                     margin-left: 4rem;
+
+                    @include mobileSize {
+                        margin-left: 2rem;
+                    }
                 }
 
                 .nav__li {
@@ -69,6 +118,10 @@
                     .nav__a {
                         font-size: 1.5rem;
                         position: relative;
+
+                        @include mobileSize {
+                            color: black;
+                        }
 
                         &::after {
                             content: "";

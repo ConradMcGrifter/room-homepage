@@ -2,6 +2,10 @@ const SLIDES = Array.from(document.querySelectorAll(".img--wrap"));
 const INFO = Array.from(document.querySelectorAll(".info--wrap"));
 const PREVIOUS = document.querySelector(".previous--wrap");
 const NEXT = document.querySelector(".next--wrap");
+const HAMBURGER_BTN = document.querySelector(".hamburger-btn");
+const CLOSE = document.querySelector(".x");
+const HAMBURGER = document.querySelector(".hamburger");
+const MOBILE_LINKS = document.querySelector(".nav__ul");
 
 let slideIndex = 1;
 
@@ -36,4 +40,10 @@ PREVIOUS.addEventListener("click", () => {
 
 NEXT.addEventListener("click", () => {
     changeSlide(1);
+});
+
+HAMBURGER_BTN.addEventListener("click", () => {
+    MOBILE_LINKS.classList.toggle("display");
+    CLOSE.classList.toggle("display");
+    HAMBURGER.classList.toggle("display");
 });
