@@ -78,8 +78,8 @@ li {
   .top {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 35rem 40rem;
-        grid-template-rows: 35rem 40rem;
+    -ms-grid-rows: 35rem auto;
+        grid-template-rows: 35rem auto;
   }
 }
 
@@ -290,6 +290,7 @@ li {
 
 @media only screen and (max-width: 950px) {
   .top .hero-info {
+    min-height: 45rem;
     overflow: unset;
     padding: 2rem;
   }
@@ -374,7 +375,7 @@ li {
 .top .hero-info .slide-arrows--wrap .previous--wrap,
 .top .hero-info .slide-arrows--wrap .next--wrap {
   background: black;
-  padding: 1.5em 0;
+  padding: 2em 0;
   width: 100%;
   cursor: pointer;
   display: -webkit-box;
@@ -443,6 +444,8 @@ li {
 @media only screen and (max-width: 950px) {
   .top .hero-info .hero-info__container .info--wrap {
     right: 0;
+    display: none;
+    position: unset;
   }
 }
 

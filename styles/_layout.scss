@@ -16,7 +16,7 @@
 
     @include mobileSize {
         grid-template-columns: 1fr;
-        grid-template-rows: 35rem 40rem;
+        grid-template-rows: 35rem auto;
     }
 
     .top__hero--wrap {
@@ -182,6 +182,8 @@
         overflow: hidden;
 
         @include mobileSize {
+            min-height: 45rem;
+
             overflow: unset;
             padding: 2rem;
         }
@@ -241,7 +243,7 @@
             .previous--wrap,
             .next--wrap {
                 background: black;
-                padding: 1.5em 0;
+                padding: 2em 0;
                 width: 100%;
                 cursor: pointer;
                 @include flexCenter();
@@ -281,6 +283,8 @@
                     // visibility: unset;
                     // display: none;
                     right: 0;
+                    display: none;
+                    position: unset;
                 }
 
                 .hero-info__h1 {
