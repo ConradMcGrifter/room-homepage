@@ -186,10 +186,12 @@ li {
           flex-direction: column;
   padding: 4rem;
   position: relative;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 950px) {
   .top .hero-info {
+    overflow: unset;
     min-height: 45rem;
     padding: 2rem;
   }

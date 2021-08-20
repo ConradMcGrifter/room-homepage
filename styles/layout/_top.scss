@@ -56,9 +56,10 @@
         @include flexCenter(column);
         padding: 4rem;
         position: relative;
-        // overflow: hidden;
+        overflow: hidden;
 
         @include mobileSize {
+            overflow: unset;
             min-height: 45rem;
             padding: 2rem;
         }
