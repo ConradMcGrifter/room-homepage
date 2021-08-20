@@ -1,6 +1,6 @@
 .grid--container {
     height: 100%;
-    min-height: 90rem;
+    min-height: 80rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 66% 34%;
@@ -283,20 +283,10 @@
                     // position: unset;
                     // visibility: unset;
                     // display: none;
-                    right: 0;
-                    display: none;
-                    position: unset;
-                }
+                    // right: 0;
 
-                .hero-info__h1 {
-                    font-size: clamp(2.8rem, 3vw, 3.4rem);
-                    font-weight: 600;
-                    max-width: 15ch;
-                }
-
-                // this limits the width of the second slide header element to match the design
-                .width-limit {
-                    max-width: 13ch;
+                    // display: none;
+                    // position: unset;
                 }
 
                 &.display {
@@ -310,6 +300,17 @@
                         @include flexCenter(column);
                         align-items: unset;
                     }
+                }
+
+                .hero-info__h1 {
+                    font-size: clamp(2.8rem, 3vw, 3.4rem);
+                    font-weight: 600;
+                    max-width: 15ch;
+                }
+
+                // this limits the width of the second slide header element to match the design
+                .width-limit {
+                    max-width: 13ch;
                 }
             }
         }
