@@ -184,7 +184,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 4rem;
+  padding: 3rem;
   position: relative;
   overflow: hidden;
 }
@@ -377,7 +377,7 @@ li {
 }
 
 .top .hero-info .hero-info__container .info--wrap .hero-info__h1 {
-  font-size: clamp(2.8rem, 3vw, 3.4rem);
+  font-size: clamp(2.8rem, 3vw, 3.8rem);
   font-weight: 600;
   max-width: 15ch;
 }
@@ -424,6 +424,7 @@ li {
   border: none;
   display: none;
   cursor: pointer;
+  width: 2.5rem;
 }
 
 @media only screen and (max-width: 950px) {

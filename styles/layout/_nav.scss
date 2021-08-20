@@ -23,6 +23,7 @@
         border: none;
         display: none;
         cursor: pointer;
+        width: 2.5rem;
 
         @include mobileSize {
             display: block;
