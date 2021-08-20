@@ -180,7 +180,7 @@
         @include flexCenter(column);
         padding: 4rem;
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
 
         @include mobileSize {
             min-height: 45rem;
@@ -267,12 +267,11 @@
             max-width: 43ch;
             position: relative;
             @include flexCenter();
-            // overflow: hidden;
 
             .info--wrap {
                 width: 100%;
                 position: absolute;
-                right: -100%;
+                // right: -100%;
                 visibility: hidden;
                 opacity: 0;
                 transition: right 0.25s ease-in-out, opacity 0.5s ease-in-out;
