@@ -333,10 +333,17 @@ li {
 .top .hero-info .hero-info__container .info--wrap {
   width: 100%;
   position: absolute;
+  right: -100%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: right 0.25s ease-in-out, opacity 0.5s ease-in-out;
   transition: right 0.25s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 950px) {
+  .top .hero-info .hero-info__container .info--wrap {
+    right: 0;
+  }
 }
 
 .top .hero-info .hero-info__container .info--wrap.display {
