@@ -50,6 +50,7 @@ li {
 
 .grid--container {
   height: 100%;
+  min-height: 90rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;

@@ -1,5 +1,6 @@
 .grid--container {
     height: 100%;
+    min-height: 90rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 66% 34%;
