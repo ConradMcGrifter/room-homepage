@@ -292,7 +292,6 @@ li {
 @media only screen and (max-width: 950px) {
   .top .hero-info {
     min-height: 45rem;
-    overflow: unset;
     padding: 2rem;
   }
 }
