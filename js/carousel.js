@@ -6,12 +6,12 @@ const NEXT = document.querySelector(".next--wrap");
 let slideIndex = 0;
 
 const showSlide = (n) => {
-    // if the number passed into the function is larger than the length of the SLIDES array - 1, reset the slide index to 0 (start)
+    // if the number passed into the function is larger than the length of the SLIDES array -1, reset the slide index to 0 (start)
     if (n > SLIDES.length - 1) {
         slideIndex = 0;
     }
 
-    // if the number passed into the function is smaller than 0, change the slide index to the last slide (whatever the length of the array is - 1)
+    // if the number passed into the function is smaller than 0, change the slide index to the last slide (whatever the length of the array is -1)
     if (n < 0) {
         slideIndex = SLIDES.length - 1;
     }
