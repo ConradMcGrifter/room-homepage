@@ -1,2 +1,3 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
-@import "abstracts", "base", "components", "layout";
+@import "abstracts", "base", "components";
+@import "layout/layout", "layout/top", "layout/nav", "layout/bottom";

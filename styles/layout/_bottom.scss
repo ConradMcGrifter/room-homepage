@@ -1,0 +1,23 @@
+.bottom {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
+    @include mobileSize {
+        grid-template-columns: 1fr;
+        grid-template-rows: 22rem auto 22rem;
+    }
+
+    .about-info {
+        @include flexCenter();
+        padding: 5rem 3rem;
+
+        .wrap {
+            // max-width: 55ch;
+
+            .about-info__h2 {
+                font-size: 1.4rem;
+                letter-spacing: 0.5rem;
+            }
+        }
+    }
+}
