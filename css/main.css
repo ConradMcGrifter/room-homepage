@@ -48,6 +48,10 @@ li {
   list-style-type: none;
 }
 
+button {
+  border: none;
+}
+
 .grid--container {
   height: 100%;
   min-height: 75rem;
@@ -299,6 +303,12 @@ li {
 .top .hero-info .slide-arrows--wrap .previous--wrap:hover,
 .top .hero-info .slide-arrows--wrap .next--wrap:hover {
   background: #454545;
+}
+
+.top .hero-info .slide-arrows--wrap .previous--wrap:focus,
+.top .hero-info .slide-arrows--wrap .next--wrap:focus {
+  background: #454545;
+  outline: none;
 }
 
 .top .hero-info .slide-arrows--wrap .previous--wrap img,
